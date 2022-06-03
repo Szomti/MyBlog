@@ -1,0 +1,6 @@
+textarea, input{
+    font-family: Helvetica;
+    font-size: medium;
+    padding: 5px;
+    box-sizing: border-box;
+}

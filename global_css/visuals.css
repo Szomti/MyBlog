@@ -1,0 +1,48 @@
+html, body{
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+    background: #424242;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.submit_btn, .edit_btn{
+    margin-top: 0.62%;
+    padding: 10px;
+    border: solid 2px #004ba0;
+    border-radius: 3px;
+    color: white;
+    background: #1976d2;
+}
+
+.error_text{
+    color: #ef5350;
+    margin-top: 5px;
+}
+
+.author{
+    line-height: 130%;
+    color: #2979ff;
+    cursor: pointer;
+}
+
+.title{
+    color: #dddddd;
+    cursor: pointer;
+}
+
+.content{
+    color: #bdbdbd;
+}
+
+.link_icon{
+    float: right;
+    padding-top: 0.62%;
+    margin: auto;
+}
+
+.card:hover, .fav_card:hover{
+    background: #282828;
+}

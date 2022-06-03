@@ -1,0 +1,14 @@
+@import URL("../global_css/textarea_font.css");
+@import Url("../global_css/visuals.css");
+@import url(../global_css/top_bar.css);
+@import url(../global_css/card.css);
+
+.icon_box{
+    float: right;
+    padding-top: 0.62%;
+    width: 32px;
+}
+
+.view_fill{
+    height: 100%;
+}

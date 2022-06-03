@@ -1,0 +1,51 @@
+@import url(../global_css/visuals.css);
+
+.top_bar{
+    top: 0;
+    position: sticky;
+    float: right;
+    background: #1976d2;
+    width: 100%;
+    padding: 0.62%;
+    color: white;
+    font-weight: 700;
+    font-size: larger;
+    height: 45px;
+    box-sizing: border-box;
+}
+
+#top_bar_left{
+    clear: both;
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+#top_bar_right{
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.top_bar_element_left:hover, .top_bar_element_right:hover{
+    color: #DEDEDE;
+}
+
+.top_bar_element_left{
+    margin-right: 1.24%;
+}
+
+.top_bar_element_right{
+    margin-left: 1.24%;
+}
+
+.current_page{
+    border-style: hidden hidden groove hidden;
+    border-color: black;
+    border-width: 1px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
