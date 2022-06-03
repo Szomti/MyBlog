@@ -1,7 +1,11 @@
 <?php
     session_start();
+    $_SESSION['path'] = $_SERVER['REQUEST_URI'];
     if(isset($_SESSION['user_id'])){
         header("Location: ../profile/profile.php", true, 301);
+    }
+    if(!isset($_SESSION['theme'])){
+        $_SESSION['theme'] = "dark";
     }
     $host = "localhost";
     $user = "root";
@@ -47,7 +51,13 @@
         <head>
             <title>Sign Up</title>
             <meta charset="UTF-8">
-            <link rel="stylesheet" href="./sign_up.css">
+            <?php
+                if($_SESSION['theme']=="dark"){
+                    echo "<link rel='stylesheet' href='./sign_up_dark.css'>";
+                }else{
+                    echo "<link rel='stylesheet' href='./sign_up_light.css'>";
+                }
+            ?>
             <link rel="icon" href="../icons/blog.png">
         </head>
         <body>
@@ -57,6 +67,11 @@
                 </div>
                 <div id="top_bar_right">
                     <?php
+                        if($_SESSION['theme']=="dark"){
+                            echo "<a href='../theme/theme_change.php' class='top_bar_element_right'><img src='../icons/light.png' class='top_bar_element_right'></a>";
+                        }else{
+                            echo "<a href='../theme/theme_change.php' class='top_bar_element_right'><img src='../icons/dark.png' class='top_bar_element_right'></a>";
+                        }
                         if(isset($_SESSION['user_id'])){
                             echo "<a href='../profile/profile.php' class='top_bar_element_right'>".$_SESSION['username']."</a>";
                         }else{

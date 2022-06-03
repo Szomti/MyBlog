@@ -1,0 +1,35 @@
+@import URL("../global_css/textarea_font_dark.css");
+@import Url("../global_css/visuals_dark.css");
+@import url(../global_css/top_bar_dark.css);
+@import url(../global_css/card_dark.css);
+
+#user_data_div{
+    float: left;
+    width: 100%;
+    padding: 0.62%;
+    box-sizing: border-box;
+    clear: both;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    margin-bottom: 0.62%;
+    clear: both;
+}
+
+.card{
+    height: 75px;
+}
+
+.icon_box{
+    float: right;
+    padding-top: 0.62%;
+    width: 32px;
+}
+
+.view_fill{
+    height: 100%;
+}

@@ -1,0 +1,29 @@
+.card, .fav_card{
+    float: left; 
+    width: 18%;
+    max-width: 18%;
+    height: 100px;
+    margin: 1%;
+    padding: 5px;
+    box-shadow: 0 0 5px 2px #0068df;
+    background: #dbdbdb;
+    overflow: clip; 
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.card_header{
+    width: calc(100% - 32px);
+    height: 100%;
+    clear: both;
+    float: left;
+    padding: 0.62%;
+    line-height: 125%;
+    box-sizing: border-box;
+    overflow: clip;
+    word-wrap: break-word;
+}
+
+.card:hover, .fav_card:hover{
+    background: #cacaca;
+}

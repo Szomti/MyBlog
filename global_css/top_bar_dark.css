@@ -1,4 +1,4 @@
-@import url(../global_css/visuals.css);
+@import url(../global_css/visuals_dark.css);
 
 .top_bar{
     top: 0;
@@ -6,7 +6,7 @@
     float: right;
     background: #1976d2;
     width: 100%;
-    padding: 0.62%;
+    padding: 0 0.62%;
     color: white;
     font-weight: 700;
     font-size: larger;
@@ -19,6 +19,7 @@
     float: left;
     width: 50%;
     text-align: left;
+    margin: 0.62% 0;
 }
 
 #top_bar_right{
@@ -32,16 +33,20 @@
 }
 
 .top_bar_element_left{
+    margin: 0.62% 0;
     margin-right: 1.24%;
+    vertical-align: middle;
 }
 
 .top_bar_element_right{
+    margin: 0.62% 0;
     margin-left: 1.24%;
+    vertical-align: middle;
 }
 
 .current_page{
     border-style: hidden hidden groove hidden;
-    border-color: black;
+    border-color: #000000;
     border-width: 1px;
 }
 

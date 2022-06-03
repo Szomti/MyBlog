@@ -1,7 +1,7 @@
-@import URL("../global_css/textarea_font.css");
-@import Url("../global_css/visuals.css");
-@import url(../global_css/top_bar.css);
-@import url(../global_css/card.css);
+@import URL("../global_css/textarea_font_light.css");
+@import Url("../global_css/visuals_light.css");
+@import url(../global_css/top_bar_light.css);
+@import url(../global_css/card_light.css);
 
 #user_data_div{
     float: left;

@@ -1,27 +1,23 @@
-@import URL("../global_css/textarea_font.css");
-@import Url("../global_css/visuals.css");
-@import url(../global_css/top_bar.css);
-
-body{
-    background: #424242;
-}
+@import URL("../global_css/textarea_font_light.css");
+@import Url("../global_css/visuals_light.css");
+@import url(../global_css/top_bar_light.css);
 
 #title{
     width:100%;
-    border: solid 2px #004ba0;
+    border: solid 2px #0075fc;
     border-radius: 3px;
-    background: #212121;
-    color: white;
+    background: #949494;
+    color: #000000;
 }
 
 #content{
     width:100%; 
     height: 500px;
     resize: none;
-    border: solid 2px #004ba0;
+    border: solid 2px #0075fc;
     border-radius: 3px;
-    background: #212121;
-    color: white;
+    background: #949494;
+    color: #000000;
     padding: 1.24%;
 }
 
@@ -40,17 +36,17 @@ body{
     margin-top: 10px;
     clear: both; 
     float: left;
-    color: white;
+    color: #000000;
 }
 
 .article_count{
     margin-top: 10px;
     float: right;
-    color: white;
+    color: #000000;
 }
 
 .submit_btn:hover{
     border: solid 2px #002171;
-    color: white;
+    color: #000000;
     background: #0d47a1;
 }

@@ -23,3 +23,7 @@
     overflow: clip;
     word-wrap: break-word;
 }
+
+.card:hover, .fav_card:hover{
+    background: #282828;
+}

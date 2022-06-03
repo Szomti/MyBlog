@@ -1,6 +1,6 @@
-@import URL("../global_css/textarea_font_dark.css");
-@import Url("../global_css/visuals_dark.css");
-@import url(../global_css/top_bar_dark.css);
+@import URL("../global_css/textarea_font_light.css");
+@import Url("../global_css/visuals_light.css");
+@import url(../global_css/top_bar_light.css);
 
 form{
     display: inline;

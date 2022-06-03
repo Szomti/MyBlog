@@ -4,6 +4,9 @@
         header("Location: ../homepage/homepage.php", true, 301);
     }
     $_SESSION['path'] = $_SERVER['REQUEST_URI'];
+    if(!isset($_SESSION['theme'])){
+        $_SESSION['theme'] = "dark";
+    }
     $host = "localhost";
     $user = "root";
     $dbpassword = "";
@@ -15,7 +18,13 @@
     <head>
         <title>Profile</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="./profile.css">
+        <?php
+            if($_SESSION['theme']=="dark"){
+                echo "<link rel='stylesheet' href='./profile_dark.css'>";
+            }else{
+                echo "<link rel='stylesheet' href='./profile_light.css'>";
+            }
+        ?>
         <link rel="icon" href="../icons/blog.png">
     </head>
     <body>
@@ -31,6 +40,11 @@
             </div>
             <div id="top_bar_right">
                 <?php
+                    if($_SESSION['theme']=="dark"){
+                        echo "<a href='../theme/theme_change.php' class='top_bar_element_right'><img src='../icons/light.png' class='top_bar_element_right'></a>";
+                    }else{
+                        echo "<a href='../theme/theme_change.php' class='top_bar_element_right'><img src='../icons/dark.png' class='top_bar_element_right'></a>";
+                    }
                     if(isset($_SESSION['user_id'])){
                         echo "<a href='../profile/logout.php?logout=true' class='top_bar_element_right'>Logout</a>";
                         echo "<label class='top_bar_element_right'>|</label>";
@@ -64,9 +78,17 @@
                         $sqlFav="SELECT * FROM `favourites` WHERE `user_id`=".$_SESSION['user_id']." AND `article_id`=".$currentArcticleId.";";
                         $queryFav= mysqli_query($conn, $sqlFav);
                         if(mysqli_num_rows($queryFav)!=0){
-                            echo "<a href='../view_article/favourite_article.php?articleId=".$currentArcticleId."'><img src='../icons/star_filled.png' class='link_icon'></a>";
+                            if($_SESSION['theme']=="dark"){
+                                echo "<a href='../view_article/favourite_article.php?articleId=".$currentArcticleId."'><img src='../icons/star_filled_light.png' class='link_icon'></a>";
+                            }else{
+                                echo "<a href='../view_article/favourite_article.php?articleId=".$currentArcticleId."'><img src='../icons/star_filled_dark.png' class='link_icon'></a>";
+                            }
                         }else{
-                            echo "<a href='../view_article/favourite_article.php?articleId=".$currentArcticleId."'><img src='../icons/star_empty.png' class='link_icon'></a>";
+                            if($_SESSION['theme']=="dark"){
+                                echo "<a href='../view_article/favourite_article.php?articleId=".$currentArcticleId."'><img src='../icons/star_empty_light.png' class='link_icon'></a>";
+                            }else{
+                                echo "<a href='../view_article/favourite_article.php?articleId=".$currentArcticleId."'><img src='../icons/star_empty_dark.png' class='link_icon'></a>";
+                            }
                         }
                         echo "</div>";
                         echo "<a href='../view_article/view_article.php?articleId=".$currentArcticleId."'><div class='view_fill'>";
@@ -94,9 +116,17 @@
                         $sqlFav="SELECT * FROM `favourites` WHERE `user_id`=".$_SESSION['user_id']." AND `article_id`=".$currentArcticleId.";";
                         $queryFav= mysqli_query($conn, $sqlFav);
                         if(mysqli_num_rows($queryFav)!=0){
-                            echo "<a href='../view_article/favourite_article.php?articleId=".$currentArcticleId."'><img src='../icons/star_filled.png' class='link_icon'></a>";
+                            if($_SESSION['theme']=="dark"){
+                                echo "<a href='../view_article/favourite_article.php?articleId=".$currentArcticleId."'><img src='../icons/star_filled_light.png' class='link_icon'></a>";
+                            }else{
+                                echo "<a href='../view_article/favourite_article.php?articleId=".$currentArcticleId."'><img src='../icons/star_filled_dark.png' class='link_icon'></a>";
+                            }
                         }else{
-                            echo "<a href='../view_article/favourite_article.php?articleId=".$currentArcticleId."'><img src='../icons/star_empty.png' class='link_icon'></a>";
+                            if($_SESSION['theme']=="dark"){
+                                echo "<a href='../view_article/favourite_article.php?articleId=".$currentArcticleId."'><img src='../icons/star_empty_light.png' class='link_icon'></a>";
+                            }else{
+                                echo "<a href='../view_article/favourite_article.php?articleId=".$currentArcticleId."'><img src='../icons/star_empty_dark.png' class='link_icon'></a>";
+                            }
                         }
                         echo "</div>";
                         echo "<a href='../view_article/view_article.php?articleId=".$currentArcticleId."'><div class='view_fill'>";

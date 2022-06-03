@@ -50,7 +50,3 @@ hr{
     padding-top: 0.62%;
     margin: auto;
 }
-
-.card:hover, .fav_card:hover{
-    background: #282828;
-}

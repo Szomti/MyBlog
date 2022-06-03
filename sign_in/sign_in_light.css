@@ -1,6 +1,6 @@
-@import URL("../global_css/textarea_font.css");
-@import Url("../global_css/visuals.css");
-@import url(../global_css/top_bar.css);
+@import URL("../global_css/textarea_font_light.css");
+@import Url("../global_css/visuals_light.css");
+@import url(../global_css/top_bar_light.css);
 
 html, body{
     height: 100%;
@@ -13,7 +13,7 @@ form{
 
 input{
     margin: 0.62%;
-    border: solid 2px #004ba0;
+    border: solid 2px #0075fc;
     border-radius: 3px;
 }
 
@@ -37,7 +37,7 @@ input{
     float: left;
     text-align: center;
     padding-bottom: 1.24%;
-    background: #212121;
+    background: #949494;
     border-radius: 3%;
     box-sizing: border-box;
 }

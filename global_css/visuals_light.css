@@ -1,0 +1,52 @@
+html, body{
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+    background: #e4e4e4;
+    color: #000000;
+    height: 100%;
+    width: 100%;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid #000000;
+    height: 1px;
+    margin-top: 2px;
+    margin-bottom: 3px;
+}
+
+.submit_btn, .edit_btn, .delete_btn{
+    margin-top: 0.62%;
+    padding: 10px;
+    border: solid 2px #005fcc;
+    border-radius: 3px;
+    color: #FFFFFF;
+    background: #1c83eb;
+}
+
+.error_text{
+    color: #ef5350;
+    margin-top: 5px;
+}
+
+.author{
+    line-height: 130%;
+    color: #2979ff;
+    cursor: pointer;
+}
+
+.title{
+    color: #252525;
+    cursor: pointer;
+}
+
+.content{
+    color: #0c0c0c;
+}
+
+.link_icon{
+    float: right;
+    padding-top: 0.62%;
+    margin: auto;
+}

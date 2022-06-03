@@ -19,7 +19,11 @@
             $query= mysqli_query($conn, $sql);
         }
         #header("Location: ../view_article/view_article.php?articleId=".$articleId, true, 301);
-        header("Location: ".$_SESSION['path'], true, 301);
+        if(isset($_SESSION['path'])){
+            header("Location: ".$_SESSION['path'], true, 301);
+        }else{
+            header("Location: ../homepage/homepage.php", true, 301);
+        }
     }
 
     mysqli_close($conn);
