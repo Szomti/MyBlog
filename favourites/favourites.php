@@ -63,7 +63,7 @@
                     echo "<a href='../view_article/view_article.php?articleId=".$currentArcticleId."'><div class='card'>";
                     echo "<div class='card_header'>";
                     echo "<label class='author'>Author:&nbsp;".strip_tags($row['name'])."</label><br><hr>";
-                    echo "<label class='title'>Title:&nbsp;".strip_tags($row['title'])."</label><br>";
+                    echo "<label class='title'>Title:&nbsp;".trim(strip_tags($row['title']))."</label><br>";
                     echo "</div>";
                     echo "<div class='icon_box'>";
                     $sqlFav="SELECT * FROM `favourites` WHERE `user_id`=".$_SESSION['user_id']." AND `article_id`=".$currentArcticleId.";";

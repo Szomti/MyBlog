@@ -7,8 +7,8 @@
     $conn = mysqli_connect($host, $user, $dbpassword, $database);
 
     if(isset($_POST['submit'])){
-        $title = $_POST['title'];
-        $content = $_POST['content'];
+        $title = trim($_POST['title']);
+        $content = trim($_POST['content']);
 
         $_SESSION['tempArticleTitle'] = $title;
         $_SESSION['tempArticleContent'] = $content;

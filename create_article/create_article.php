@@ -88,10 +88,10 @@
                             echo "<form action='./handle_edit_article.php?articleId=".$articleId."' method='POST'>";
                             echo "<div class='article_context_text'>Title:</div>";
                             echo "<div class='article_count'><label id='titleCount'></label></div><br>";
-                            echo "<input type='text' name='title' id='title' value='".$row['title']."' required>";
+                            echo "<input type='text' name='title' id='title' value='".trim($row['title'])."' required>";
                             echo "<div class='article_context_text'>Content:</div>";
                             echo "<div class='article_count'><label id='contentCount'></label></div><br>";
-                            echo "<textarea name='content' id='content' required>".$row['content']."</textarea><br>";
+                            echo "<textarea name='content' id='content' required>".trim($row['content'])."</textarea><br>";
                         }
                     }else{
                         echo "<form action='./handle_create_article.php' method='POST'>";

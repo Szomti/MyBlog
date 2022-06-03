@@ -66,7 +66,7 @@
                         echo "<div>&nbsp;</div>";
                         echo "<div class='header_info'>";
                         echo "<label class='author'>Author:&nbsp;".strip_tags($row['name'])."</label><br>";
-                        echo "<label class='title'>Title:&nbsp;".strip_tags($row['title'])."</label><br>";
+                        echo "<label class='title'>Title:&nbsp;".trim(strip_tags($row['title']))."</label><br>";
                         echo "</div>";
                         if(isset($_SESSION['user_id'])){
                             echo "<div class='icon_box'>";
@@ -88,7 +88,7 @@
                             echo "</div>";
                         }
                         echo "<div class='content_area'>";
-                        echo "<label class='content'>".nl2br($row['content'])."</label><br>";
+                        echo "<label class='content'>".nl2br(trim($row['content']))."</label><br>";
                         echo "</div>";
                         if(isset($_SESSION['user_id'])){
                             if($row['user_id']==$_SESSION['user_id']){
@@ -105,6 +105,7 @@
                         }else{
                             echo "<div class='margin_div'>&nbsp;</div>";
                         }
+                        echo "<br><br>";
                     }
                 }
             ?>
