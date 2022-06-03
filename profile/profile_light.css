@@ -3,3 +3,7 @@
 @import url(../global_css/top_bar_light.css);
 @import url(../global_css/card_light.css);
 @import url(../profile/profile.css);
+
+h3 hr{
+    border-top: 1px dashed #000000;
+}

@@ -65,7 +65,7 @@
                 $query = mysqli_query($conn, $sql);
                 if(mysqli_num_rows($query)!=0){
                     $favCount = 0;
-                    echo "<h3>Your Last 5 Favourites:</h3>";
+                    echo "<h3>Your Last 5 Favourites:<hr></h3>";
                     while($row = mysqli_fetch_assoc($query)){
                         $favCount += 1;
                         $currentArcticleId = $row['article_id'];
@@ -105,7 +105,7 @@
                 $sql = "SELECT * FROM `articles` WHERE `user_id`=".$_SESSION['user_id']." ORDER BY `article_id` DESC;";
                 $query = mysqli_query($conn, $sql);
                 if(mysqli_num_rows($query)!=0){
-                    echo "<h3>Your Articles:</h3>";
+                    echo "<h3>Your Articles:<hr></h3>";
                     while($row = mysqli_fetch_assoc($query)){
                         $currentArcticleId = $row['article_id'];
                         echo "<a href='../view_article/view_article.php?articleId=".$row['article_id']."'><div class='card'>";

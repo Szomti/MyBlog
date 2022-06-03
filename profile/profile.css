@@ -11,8 +11,15 @@ h2{
 }
 
 h3{
+    margin: 0;
+    padding: 0;
+    padding-top: 0.62%;
     margin-bottom: 0.62%;
     clear: both;
+}
+
+h3 hr{
+    border: none;
 }
 
 .card{
