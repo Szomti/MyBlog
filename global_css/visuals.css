@@ -3,9 +3,17 @@ html, body{
     margin: 0;
     padding: 0;
     background: #424242;
-    color: white;
+    color: #FFFFFF;
     height: 100%;
     width: 100%;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid #FFFFFF;
+    height: 1px;
+    margin-top: 2px;
+    margin-bottom: 3px;
 }
 
 .submit_btn, .edit_btn{
@@ -13,7 +21,7 @@ html, body{
     padding: 10px;
     border: solid 2px #004ba0;
     border-radius: 3px;
-    color: white;
+    color: #FFFFFF;
     background: #1976d2;
 }
 

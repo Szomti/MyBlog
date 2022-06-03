@@ -60,7 +60,7 @@
                                 if($row['name']==$username){
                                     if(password_verify($password, $row['password'])){
                                         $_SESSION['user_id'] = $row['user_id'];
-                                        $_SESSION['username'] = $username;
+                                        $_SESSION['username'] = strip_tags($username);
                                         header("Location: ../profile/profile.php", true, 301);
                                     }
                                 }

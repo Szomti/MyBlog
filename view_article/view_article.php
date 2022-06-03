@@ -51,8 +51,8 @@
                         $currentArcticleId = $row['article_id'];
                         echo "<div>&nbsp;</div>";
                         echo "<div class='header_info'>";
-                        echo "<label class='author'>Author:&nbsp;".$row['name']."</label><br>";
-                        echo "<label class='title'>Title:&nbsp;".$row['title']."</label><br>";
+                        echo "<label class='author'>Author:&nbsp;".strip_tags($row['name'])."</label><br>";
+                        echo "<label class='title'>Title:&nbsp;".strip_tags($row['title'])."</label><br>";
                         echo "</div>";
                         if(isset($_SESSION['user_id'])){
                             echo "<div class='icon_box'>";
