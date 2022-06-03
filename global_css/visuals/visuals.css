@@ -30,6 +30,10 @@ hr{
 
 .title{
     cursor: pointer;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .link_icon{
