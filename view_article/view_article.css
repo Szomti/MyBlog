@@ -1,7 +1,3 @@
-@import URL("../global_css/textarea_font_dark.css");
-@import Url("../global_css/visuals_dark.css");
-@import url(../global_css/top_bar_dark.css);
-
 form{
     display: inline;
     margin-right: 5px;
@@ -26,13 +22,11 @@ form{
 }
 
 .content_area{
-    border: solid 2px #0075fc;
     border-radius: 5px;
     padding: 1.24%;
     margin-top: 0;
     width:100%; 
     min-height: 500px;
-    background: #949494;
     overflow-y: auto;
     overflow-x: clip;
     word-wrap: break-word;

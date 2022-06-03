@@ -1,55 +1,9 @@
 @import URL("../global_css/textarea_font_light.css");
 @import Url("../global_css/visuals_light.css");
 @import url(../global_css/top_bar_light.css);
-
-form{
-    display: inline;
-    margin-right: 5px;
-}
-
-#display_arcticle{
-    width: 40%; 
-    height: auto;
-    float: left; 
-    margin: auto;
-}
-
-.header_info{
-    width: calc(100% - 32px);
-    clear: both;
-    float: left;
-    padding: 0.62%;
-    line-height: 125%;
-    box-sizing: border-box;
-    overflow: clip;
-    word-wrap: break-word;
-}
+@import url(../view_article/view_article.css);
 
 .content_area{
     border: solid 2px #0075fc;
-    border-radius: 5px;
-    padding: 1.24%;
-    margin-top: 0;
-    width:100%; 
-    min-height: 500px;
     background: #949494;
-    overflow-y: auto;
-    overflow-x: clip;
-    word-wrap: break-word;
-    box-sizing: border-box;
-}
-
-.empty_div{
-    width: 30%; 
-    float: left;
-}
-
-.margin_div{
-    margin-bottom: 2.48%;
-}
-
-.icon_box{
-    float: right;
-    padding-top: 0.62%;
-    width: 32px;
 }

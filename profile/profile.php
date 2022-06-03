@@ -61,7 +61,7 @@
                 echo "<h2>Welcome, ".$_SESSION['username']." :D</h2>";
             ?>
             <?php
-                $sql = "SELECT * FROM `favourites` JOIN `articles` ON `favourites`.`article_id`=`articles`.`article_id` JOIN `users` ON `favourites`.`user_id`=`users`.`user_id` WHERE `favourites`.`user_id`=".$_SESSION['user_id']." ORDER BY `favourites`.`add_time` DESC;";
+                $sql = "SELECT * FROM `favourites` JOIN `articles` ON `favourites`.`article_id`=`articles`.`article_id` JOIN `users` ON `articles`.`user_id`=`users`.`user_id` WHERE `favourites`.`user_id`=".$_SESSION['user_id']." ORDER BY `add_time` DESC;";
                 $query = mysqli_query($conn, $sql);
                 if(mysqli_num_rows($query)!=0){
                     $favCount = 0;

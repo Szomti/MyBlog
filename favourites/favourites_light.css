@@ -2,13 +2,4 @@
 @import Url("../global_css/visuals_light.css");
 @import url(../global_css/top_bar_light.css);
 @import url(../global_css/card_light.css);
-
-.icon_box{
-    float: right;
-    padding-top: 0.62%;
-    width: 32px;
-}
-
-.view_fill{
-    height: 100%;
-}
+@import url(../favourites/favourites.css);

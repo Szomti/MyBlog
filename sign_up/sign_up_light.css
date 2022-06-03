@@ -1,48 +1,12 @@
 @import URL("../global_css/textarea_font_light.css");
 @import Url("../global_css/visuals_light.css");
 @import url(../global_css/top_bar_light.css);
-
-html, body{
-    height: 100%;
-    overflow: hidden;
-}
-
-form{
-    margin: 0;
-}
+@import url(../sign_up/sign_up.css);
 
 input{
-    margin: 0.62%;
     border: solid 2px #0075fc;
-    border-radius: 3px;
-}
-
-#flex_div{
-    width: 100%;
-    height: calc(90% - 45px);
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sign_up_input{
-    width: 75%;
-    min-width: 100px;
 }
 
 .main_div{
-    display: block;
-    width: 20%; 
-    float: left;
-    text-align: center;
-    padding-bottom: 1.24%;
     background: #949494;
-    border-radius: 3%;
-    box-sizing: border-box;
-}
-
-.empty_div{
-    width: 40%; 
-    float: left;
 }

@@ -1,56 +1,30 @@
 @import URL("../global_css/textarea_font_dark.css");
 @import Url("../global_css/visuals_dark.css");
 @import url(../global_css/top_bar_dark.css);
-
-body{
-    background: #424242;
-}
+@import url(../create_article/create_article.css);
 
 #title{
-    width:100%;
     border: solid 2px #004ba0;
-    border-radius: 3px;
     background: #212121;
-    color: white;
+    color: #FFFFFF;
 }
 
 #content{
-    width:100%; 
-    height: 500px;
-    resize: none;
     border: solid 2px #004ba0;
-    border-radius: 3px;
     background: #212121;
-    color: white;
-    padding: 1.24%;
-}
-
-.main_div{
-    width: 40%; 
-    float: left; 
-    margin: auto;
-}
-
-.empty_div{
-    width: 30%; 
-    float: left;
+    color: #FFFFFF;
 }
 
 .article_context_text{
-    margin-top: 10px;
-    clear: both; 
-    float: left;
-    color: white;
+    color: #FFFFFF;
 }
 
 .article_count{
-    margin-top: 10px;
-    float: right;
-    color: white;
+    color: #FFFFFF;
 }
 
 .submit_btn:hover{
     border: solid 2px #002171;
-    color: white;
+    color: #FFFFFF;
     background: #0d47a1;
 }
