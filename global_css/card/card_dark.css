@@ -1,0 +1,10 @@
+@import url(./card.css);
+
+.card, .fav_card{
+    box-shadow: 0 0 5px 2px #0068df;
+    background: #212121;
+}
+
+.card:hover, .fav_card:hover{
+    background: #282828;
+}

@@ -1,0 +1,32 @@
+@import url(./visuals.css);
+
+html, body{
+    background: #e4e4e4;
+    color: #000000;
+}
+
+hr{
+    border-top: 1px solid #000000;
+}
+
+.submit_btn, .edit_btn, .delete_btn{
+    border: solid 2px #005fcc;
+    color: #FFFFFF;
+    background: #1c83eb;
+}
+
+.error_text{
+    color: #ef5350;
+}
+
+.author{
+    color: #2979ff;
+}
+
+.title{
+    color: #252525;
+}
+
+.content{
+    color: #0c0c0c;
+}

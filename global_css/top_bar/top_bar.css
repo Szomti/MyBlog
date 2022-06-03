@@ -4,10 +4,8 @@
     top: 0;
     position: sticky;
     float: right;
-    background: #1976d2;
     width: 100%;
     padding: 0 0.62%;
-    color: white;
     font-weight: 700;
     font-size: larger;
     height: 45px;
@@ -28,10 +26,6 @@
     text-align: right;
 }
 
-.top_bar_element_left:hover, .top_bar_element_right:hover{
-    color: #DEDEDE;
-}
-
 .top_bar_element_left{
     margin: 0.62% 0;
     margin-right: 1.24%;
@@ -46,11 +40,9 @@
 
 .current_page{
     border-style: hidden hidden groove hidden;
-    border-color: #000000;
     border-width: 1px;
 }
 
 a{
     text-decoration: none;
-    color: white;
 }

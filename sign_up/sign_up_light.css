@@ -1,6 +1,6 @@
-@import URL("../global_css/textarea_font_light.css");
-@import Url("../global_css/visuals_light.css");
-@import url(../global_css/top_bar_light.css);
+@import URL("../global_css/textarea/textarea_font_light.css");
+@import Url("../global_css/visuals/visuals_light.css");
+@import url(../global_css/top_bar/top_bar_light.css);
 @import url(../sign_up/sign_up.css);
 
 input{

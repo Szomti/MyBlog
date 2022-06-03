@@ -1,0 +1,19 @@
+@import url(../global_css/visuals_dark.css);
+@import url(./top_bar.css);
+
+.top_bar{
+    background: #1976d2;
+    color: #FFFFFF;
+}
+
+.top_bar_element_left:hover, .top_bar_element_right:hover{
+    color: #DEDEDE;
+}
+
+.current_page{
+    border-color: #000000;
+}
+
+a{
+    color: #FFFFFF;
+}

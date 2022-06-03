@@ -5,8 +5,6 @@
     height: 100px;
     margin: 1%;
     padding: 5px;
-    box-shadow: 0 0 5px 2px #0068df;
-    background: #212121;
     overflow: clip; 
     word-wrap: break-word;
     box-sizing: border-box;
@@ -22,8 +20,4 @@
     box-sizing: border-box;
     overflow: clip;
     word-wrap: break-word;
-}
-
-.card:hover, .fav_card:hover{
-    background: #282828;
 }
