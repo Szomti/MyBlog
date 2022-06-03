@@ -73,6 +73,10 @@
                                 echo "<form action='../create_article/create_article.php?articleId=".$currentArcticleId."' method='POST'>";
                                 echo "<input type='submit' name='submit' class='edit_btn' value='Edit'>";
                                 echo "</form>";
+                                echo "<form action='./delete_article.php' method='POST' onsubmit='return confirmDelete()'>";
+                                echo "<input type='hidden' name='articleId' value=".$currentArcticleId.">";
+                                echo "<input type='submit' name='submit' class='delete_btn' value='Delete'>";
+                                echo "</form>";
                             }else{
                                 echo "<div class='margin_div'>&nbsp;</div>";
                             }
@@ -86,6 +90,16 @@
         <div class="empty_div">&nbsp;</div>
     </body>
 </html>
+
+<script>
+    function confirmDelete(){
+        if(confirm("Do you want to delete this article?") == true){
+            return true;
+        }else{
+            return false;
+        }
+    }
+</script>
 
 <?php
     mysqli_close($conn);

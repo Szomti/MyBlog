@@ -16,7 +16,7 @@ hr{
     margin-bottom: 3px;
 }
 
-.submit_btn, .edit_btn{
+.submit_btn, .edit_btn, .delete_btn{
     margin-top: 0.62%;
     padding: 10px;
     border: solid 2px #004ba0;

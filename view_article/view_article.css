@@ -2,6 +2,11 @@
 @import Url("../global_css/visuals.css");
 @import url(../global_css/top_bar.css);
 
+form{
+    display: inline;
+    margin-right: 5px;
+}
+
 #display_arcticle{
     width: 40%; 
     height: auto;
